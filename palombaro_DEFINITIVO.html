@@ -7,40 +7,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Potree Viewer – PALOMBARO</title>
 
-  <link rel="stylesheet" href="../build/potree/potree.css">
-  <link rel="stylesheet" href="../libs/jquery-ui/jquery-ui.min.css">
-  <link rel="stylesheet" href="../libs/openlayers3/ol.css">
-  <link rel="stylesheet" href="../libs/spectrum/spectrum.css">
-  <link rel="stylesheet" href="../libs/jstree/themes/mixed/style.css">
+  <link rel="stylesheet" href="./build/potree/potree.css">
+  <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="./libs/openlayers3/ol.css">
+  <link rel="stylesheet" href="./libs/spectrum/spectrum.css">
+  <link rel="stylesheet" href="./libs/jstree/themes/mixed/style.css">
 </head>
 
 <body>
 
   <!-- LIBS -->
-  <script src="../libs/jquery/jquery-3.1.1.min.js"></script>
-  <script src="../libs/jquery-ui/jquery-ui.min.js"></script>
-  <script src="../libs/spectrum/spectrum.js"></script>
-  <script src="../libs/other/BinaryHeap.js"></script>
-  <script src="../libs/tween/tween.min.js"></script>
-  <script src="../libs/d3/d3.js"></script>
-  <script src="../libs/proj4/proj4.js"></script>
-  <script src="../libs/openlayers3/ol.js"></script>
-  <script src="../libs/i18next/i18next.js"></script>
-  <script src="../libs/jstree/jstree.js"></script>
-  <script src="../build/potree/potree.js"></script>
-  <script src="../libs/plasio/js/laslaz.js"></script>
+  <script src="./libs/jquery/jquery-3.1.1.min.js"></script>
+  <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./libs/spectrum/spectrum.js"></script>
+  <script src="./libs/other/BinaryHeap.js"></script>
+  <script src="./libs/tween/tween.min.js"></script>
+  <script src="./libs/d3/d3.js"></script>
+  <script src="./libs/proj4/proj4.js"></script>
+  <script src="./libs/openlayers3/ol.js"></script>
+  <script src="./libs/i18next/i18next.js"></script>
+  <script src="./libs/jstree/jstree.js"></script>
+  <script src="./build/potree/potree.js"></script>
+  <script src="./libs/plasio/js/laslaz.js"></script>
 
   <!-- CONTAINER -->
   <div class="potree_container" style="position:absolute; width:100%; height:100%; left:0; top:0;">
     <div id="potree_render_area"
-         style="background-image:url('../build/potree/resources/images/la-raccolta-delle-acque-matera-palombaro-sasso-caveoso-1.jpg');">
+         style="background-image:url('./build/potree/resources/images/la-raccolta-delle-acque-matera-palombaro-sasso-caveoso-1.jpg');">
     </div>
     <div id="potree_sidebar_container"></div>
   </div>
 
   <!-- SCRIPT -->
   <script type="module">
-    import * as THREE from "../libs/three.js/build/three.module.js";
+    import * as THREE from "./libs/three.js/build/three.module.js";
 
     // =====================
     // VIEWER
@@ -163,7 +163,7 @@
     // LOAD POINT CLOUD
     // =====================
     Potree.loadPointCloud(
-      "../pointclouds/palombaro/metadata.json",
+      "./pointclouds/palombaro/metadata.json",
       "palombaro",
       e => {
         const pc = e.pointcloud;
